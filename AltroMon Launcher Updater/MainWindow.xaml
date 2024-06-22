@@ -1,0 +1,18 @@
+﻿<Window x:Class="AltroMon_Launcher_Updater.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AltroMon_Launcher_Updater"
+        mc:Ignorable="d"
+        x:Name="mainUserWindow"
+        Title="AltroMon Launcher Updater" Height="290" Width="600" Background="#1c1c1c" ResizeMode="CanMinimize" Visibility="Hidden">
+    <Grid>
+        <Label Content="Проверка обновлений" HorizontalAlignment="Center" Margin="0,13,0,0" VerticalAlignment="Top" Height="45" Width="280" Foreground="White" FontSize="22" HorizontalContentAlignment="Center"/>
+        <Label x:Name="label_status" Content="Статус: Ожидание..." HorizontalAlignment="Left" Margin="21,70,0,0" VerticalAlignment="Top" Width="569" FontSize="18" Foreground="White"/>
+        <Label Content="Текущий прогресс" HorizontalAlignment="Left" Margin="21,130,0,0" VerticalAlignment="Top" Width="148" FontSize="16" Foreground="White"/>
+        <Label Content="Общий прогресс" HorizontalAlignment="Left" Margin="21,190,0,0" VerticalAlignment="Top" Width="148" FontSize="16" Foreground="White"/>
+        <ProgressBar x:Name="progress_current" HorizontalAlignment="Left" Height="24" Margin="174,137,0,0" VerticalAlignment="Top" Width="380" Value="0" Foreground="#575dbd"/>
+        <ProgressBar x:Name="progress_total" HorizontalAlignment="Left" Height="24" Margin="174,197,0,0" VerticalAlignment="Top" Width="380" Value="0" Foreground="#575dbd"/>
+    </Grid>
+</Window>
